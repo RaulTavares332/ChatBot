@@ -1,14 +1,17 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_DOMINIO.firebaseapp.com",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_BUCKET.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
+  apiKey: "AIzaSyCYk999da9dGgJyffole0rVHT7O-pHxRSg",
+  authDomain: "chatbot-d3989.firebaseapp.com",
+  projectId: "chatbot-d3989",
+  storageBucket: "chatbot-d3989.firebasestorage.app",
+  messagingSenderId: "748873824791",
+  appId: "1:748873824791:web:61cb26ac7f97bf77f8fa52",
 };
 
 const app = initializeApp(firebaseConfig);
+
 export const auth = getAuth(app);
+export const db = getFirestore(app);
